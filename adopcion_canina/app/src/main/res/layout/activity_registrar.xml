@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.registrar">
+
+    <EditText
+        android:id="@+id/edt_telefono_usu_register"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:hint="   Telefono"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_direccion_usu_register"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="   Direccion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edt_telefono_usu_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_telefono_usu_register"
+        app:layout_constraintTop_toBottomOf="@+id/edt_telefono_usu_register" />
+
+    <EditText
+        android:id="@+id/edt_correo_usu_register"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="   Correo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edt_telefono_usu_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_telefono_usu_register"
+        app:layout_constraintTop_toBottomOf="@+id/edt_direccion_usu_register" />
+
+    <EditText
+        android:id="@+id/edt_contra_usu_register"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="  Contraseña"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edt_telefono_usu_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_telefono_usu_register"
+        app:layout_constraintTop_toBottomOf="@+id/edt_correo_usu_register" />
+
+    <Button
+        android:id="@+id/btn_registrar_usu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="registrar"
+        app:layout_constraintEnd_toEndOf="@+id/edt_contra_usu_register"
+        app:layout_constraintStart_toStartOf="@+id/edt_contra_usu_register"
+        app:layout_constraintTop_toBottomOf="@+id/edt_contra_usu_register" />
+</androidx.constraintlayout.widget.ConstraintLayout>
